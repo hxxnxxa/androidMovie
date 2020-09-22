@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="70dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="배트맨"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/audi_day_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_tv"
+        android:layout_alignLeft="@+id/title_tv"
+        android:layout_margin="5dp"
+        android:text="오늘 관객수: 20000"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/audi_total_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_tv"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/audi_day_tv"
+        android:text="누적: 200000"
+        android:textSize="20sp" />
+</RelativeLayout>

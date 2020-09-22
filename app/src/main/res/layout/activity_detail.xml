@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/tv_mvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:minWidth="150dp"
+        android:minHeight="50dp"
+        android:text="영화 제목"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_audience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_mvname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:minWidth="150dp"
+        android:minHeight="50dp"
+        android:text="관객수"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_accumulate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_audience"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:minWidth="150dp"
+        android:minHeight="50dp"
+        android:text="누적 관객수"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_accumulate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:minWidth="150dp"
+        android:minHeight="50dp"
+        android:text="감독"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_actor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_director"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:minWidth="150dp"
+        android:minHeight="50dp"
+        android:text="배우"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_movietime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_actor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:minWidth="150dp"
+        android:minHeight="50dp"
+        android:text="상영시간"
+        android:textSize="25sp" />
+
+</RelativeLayout>

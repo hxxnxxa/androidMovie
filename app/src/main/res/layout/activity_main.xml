@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/year_et"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="년"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/month_et"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/year_et"
+        android:hint="월"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/date_et"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/month_et"
+        android:hint="일"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/search_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/date_et"
+        android:text="검색"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bt"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>
