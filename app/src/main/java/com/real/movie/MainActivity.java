@@ -33,7 +33,7 @@ import java.util.ArrayList;
 
 //convert custom listview
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class MainActivity extends AppCompatActivity {
 
     //MoviewData 저장
     ArrayList<MovieData> arr =new ArrayList<>();
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         adapter = new MyAdapter(this);
         lv.setAdapter(adapter);
 
-        lv.setOnItemClickListener(this);
+        //lv.setOnItemClickListener(this);
 
         findViewById(R.id.search_bt).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,9 +142,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
     };
 
-
-
-
     // 3.아이템 데이터에 대한 클래스 정의 (class ListViewItem)
     class ItemHolder{
         TextView titleTvHolder;
@@ -205,7 +202,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     // 6. ListView 클릭 이벤트 처리
-    @Override
+/*    @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Log.d("hwa","cd: "+ arr.get(i).movieCd);
         Intent intent = new Intent(this, com.real.movie.DetailActivity.class);
@@ -214,5 +211,5 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         intent.putExtra("audiAcc", arr.get(i).audiTotal); //
 
         startActivity(intent);
-    }
+    }*/
 }
